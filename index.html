@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMILES Property Predictor</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">Chemical Property Predictor</div>
+    <div class="authors">Created by Adam, Sami, and Mohammed</div>
+  </div>
+
+  <div class="container">
+    <h1>Predict Molecular Properties</h1>
+    
+    <label for="smilesInput">Enter the SMILES representation of the molecule:</label>
+    <input type="text" id="smilesInput" placeholder="e.g., CCO or CC(=O)O" onkeydown="handleKeyPress(event)">
+
+    <button onclick="predictProperties()" id="predictButton">Predict</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
